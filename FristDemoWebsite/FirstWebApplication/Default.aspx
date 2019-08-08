@@ -38,4 +38,46 @@
             </p>
         </div>
     </div>
+    <div class="row">
+        <div class="col-md-4">
+
+
+            <table class="nav-justified">
+                <tr>
+                    <td style="width: 199px">First Name:</td>
+                    <td>
+                        <asp:TextBox ID="FirstNAmeTextBox" runat="server"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 199px">Last Name:</td>
+                    <td>
+                        <asp:TextBox ID="LastNameTextBox" runat="server"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 199px">State:</td>
+                    <td>
+                        <asp:DropDownList ID="StatesDropDown" runat="server">
+                            <asp:ListItem Value="" Text="Select one" />
+                            <asp:ListItem>New York</asp:ListItem>
+                            <asp:ListItem>Oklahoma</asp:ListItem>
+                            <asp:ListItem>Texas</asp:ListItem>
+                        </asp:DropDownList>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 199px">&nbsp;</td>
+                    <td>
+                        <asp:Button ID="Button1" runat="server" Text="Submit" OnClick="Button1_Click" />
+                        <br />
+                        <br />
+                        <asp:Label ID="OutputLabel" runat="server"></asp:Label>
+                    </td>
+                </tr>
+            </table>
+
+
+        </div>
+    </div>
 </asp:Content>
