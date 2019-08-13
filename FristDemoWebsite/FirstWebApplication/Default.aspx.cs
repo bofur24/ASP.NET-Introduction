@@ -14,6 +14,10 @@ public partial class _Default : Page
 
     protected void Button1_Click(object sender, EventArgs e)
     {
-        
+        var fname = FirstNAmeTextBox.Text;
+        var lname = LastNameTextBox.Text;
+        var state = StatesDropDown.SelectedValue;
+
+        OutputLabel.Text = fname + " " + lname + " " + state; 
     }
 }
